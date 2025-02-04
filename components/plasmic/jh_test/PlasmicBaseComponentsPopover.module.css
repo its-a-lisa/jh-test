@@ -1,0 +1,79 @@
+.ariaDialogTrigger:global(.__wab_instance) {
+  position: relative;
+}
+.baseComponentsPopoverButton:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__k1BM {
+  position: relative;
+  height: 1em;
+}
+.svg__ipdlF {
+  position: relative;
+  height: 1em;
+}
+.ariaPopover:global(.__wab_instance) {
+  max-width: 100%;
+  box-shadow: 0px 0px 20px 0px var(--token-Y9K6Wqj3YsQY);
+  border-radius: var(--token-mAayyMEZFCz7);
+}
+.freeBox__wZi2T {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--token-lx5fyBqvnJ0X);
+  width: var(--token-fkk8uLtjKI1v);
+  border-radius: var(--token-mAayyMEZFCz7);
+  padding: var(--token-8K7lNARaD8Wd);
+}
+.freeBox__wZi2T > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: calc(0px - var(--token-Vm1_QsLvAQR5));
+  height: calc(100% + var(--token-Vm1_QsLvAQR5));
+}
+.freeBox__wZi2T > :global(.__wab_flex-container) > *,
+.freeBox__wZi2T > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__wZi2T > :global(.__wab_flex-container) > picture > img,
+.freeBox__wZi2T
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: var(--token-Vm1_QsLvAQR5);
+}
+.text__eEtSy {
+  position: relative;
+  text-decoration-line: none;
+  text-overflow: clip;
+  color: var(--token-Y1OTgpYGs0Nr);
+  text-align: left;
+  letter-spacing: 0.01em;
+  line-height: var(--token-YtA11UqqDIbg);
+  font-size: var(--token-QSSa2VFfR_qN);
+  font-family: var(--token-_9Djz6ogGlUK);
+}
+.text__dBnvB {
+  position: relative;
+  font-weight: 500;
+  text-decoration-line: none;
+  text-overflow: clip;
+  color: var(--token-Y1OTgpYGs0Nr);
+  text-align: left;
+  letter-spacing: 0.01em;
+  line-height: var(--token-YtA11UqqDIbg);
+  font-size: var(--token-QSSa2VFfR_qN);
+  font-family: var(--token-_9Djz6ogGlUK);
+}
+.text__ig1WI {
+  position: relative;
+  text-decoration-line: none;
+  text-overflow: clip;
+  color: var(--token-Y1OTgpYGs0Nr);
+  text-align: left;
+  letter-spacing: 0.01em;
+  line-height: var(--token-YtA11UqqDIbg);
+  font-size: var(--token-QSSa2VFfR_qN);
+  font-family: var(--token-_9Djz6ogGlUK);
+}

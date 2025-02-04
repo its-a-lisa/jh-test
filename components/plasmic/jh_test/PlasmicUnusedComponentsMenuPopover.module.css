@@ -1,0 +1,24 @@
+.root:global(.__wab_instance) {
+  box-sizing: border-box;
+  object-fit: cover;
+  background: var(--token-esGsRvwP1OR5);
+  position: relative;
+  box-shadow: 0px 0px 12px 0px var(--token-TWa3Nw3klz9P),
+    0px 0px 0px 0px var(--token-XpfckqBimAW-);
+  max-width: var(--token-0mhFL0jBk-gP);
+  border-radius: var(--token-L1Cjje71Ha4w);
+  padding: var(--token-1_pqz4M9GMOs);
+}
+.ariaListBox:global(.__wab_instance) {
+  box-sizing: border-box;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  outline-style: none;
+  min-width: 0;
+}
+.unusedComponentsMenuSection__lk3Ex:global(.__wab_instance):global(
+    .__wab_instance
+  ) {
+  max-width: 100%;
+}

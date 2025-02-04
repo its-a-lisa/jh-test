@@ -1,0 +1,53 @@
+.root {
+  display: flex;
+  min-width: 0px;
+  height: 100%;
+  position: relative;
+  background: var(--token-mtNUSRJBQoDc);
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 0;
+}
+.layoutNavigationBar:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: var(--token-REl6-oiMkGMC);
+  width: 100%;
+  min-width: 0;
+}
+@media (max-width: 1024px) {
+  .layoutNavigationBar:global(.__wab_instance):global(.__wab_instance) {
+    height: auto;
+  }
+}
+.freeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 0;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.layoutFooter:global(.__wab_instance) {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}

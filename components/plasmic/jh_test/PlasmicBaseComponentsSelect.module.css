@@ -1,0 +1,72 @@
+.ariaSelect:global(.__wab_instance) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  width: auto;
+  row-gap: var(--token-tXogLSwWHf-c);
+}
+.ariaSelect[data-disabled]:global(.__wab_instance) {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ariaButton:global(.__wab_instance) {
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 1px var(--token-goMqzm0iomgQ);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--token-vnpF5obhQ51M);
+  align-items: center;
+  width: auto;
+  column-gap: var(--token--NA_QF7sbQDn);
+  border-radius: var(--token-Wye-XUBYZ4WN);
+  padding: var(--token-WjqIvv441W6x) var(--token-FExFeKtrTt_G);
+  border-style: none;
+}
+.ariaButtontype_plain:global(.__wab_instance) {
+  box-shadow: none;
+  background: var(--token-pLJOGh6a9pTI);
+}
+.freeBox {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  color: var(--token-_wDLTjEe75Lu);
+}
+.svg {
+  width: var(--token-1zxgXD0T49rO);
+  height: var(--token-N_VKF3SBUuHw);
+}
+.unusedComponentsMenuPopover:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.baseComponentsMenuItem__ofapn:global(.__wab_instance):global(.__wab_instance) {
+  width: auto;
+}
+.baseComponentsMenuItem__y7Ab:global(.__wab_instance):global(.__wab_instance) {
+  width: auto;
+}
+.baseComponentsMenuItem___9TnOg:global(.__wab_instance):global(
+    .__wab_instance
+  ) {
+  width: auto;
+}
+.unusedComponentsMenuSection___79Gab:global(.__wab_instance):global(
+    .__wab_instance
+  ) {
+  max-width: 100%;
+}
+.baseComponentsMenuItem__he3Cj:global(.__wab_instance):global(.__wab_instance) {
+  width: auto;
+}
