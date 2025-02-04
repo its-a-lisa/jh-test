@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link 
           rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=YourFontName&display=swap" 
+          href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" 
         />
       </Head>
       <PlasmicRootProvider>
