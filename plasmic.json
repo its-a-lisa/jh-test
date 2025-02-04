@@ -1064,20 +1064,6 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/pathway/[slug]"
-        },
-        {
-          "id": "ba7zT3CQ1P_U",
-          "name": "Old",
-          "type": "managed",
-          "projectId": "wboNivZUXwuALwWQq1HqWe",
-          "renderModuleFilePath": "plasmic/jh_test/PlasmicOld.tsx",
-          "importSpec": {
-            "modulePath": "../pages/old.tsx"
-          },
-          "cssFilePath": "plasmic/jh_test/PlasmicOld.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/old"
         }
       ],
       "icons": [

@@ -59,6 +59,9 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import LayoutNavigationBar from "../../LayoutNavigationBar"; // plasmic-import: 9XazTiT1hZuq/component
+import LayoutFooter from "../../LayoutFooter"; // plasmic-import: p_5BOqwmCgXz/component
+
 import {
   ThemeValue,
   useTheme
@@ -72,6 +75,8 @@ import plasmic_17_sds_foundation_system_css from "../17_sds_foundation_system/pl
 import projectcss from "./plasmic.module.css"; // plasmic-import: wboNivZUXwuALwWQq1HqWe/projectcss
 import sty from "./PlasmicLayoutPageLayout.module.css"; // plasmic-import: Zd-Ayv7Gl3LR/css
 
+import Icon25Icon from "./icons/PlasmicIcon__Icon25"; // plasmic-import: vjYO-Sm9E83Z/icon
+
 createPlasmicElementProxy;
 
 export type PlasmicLayoutPageLayout__VariantMembers = {};
@@ -80,15 +85,24 @@ type VariantPropType = keyof PlasmicLayoutPageLayout__VariantsArgs;
 export const PlasmicLayoutPageLayout__VariantProps =
   new Array<VariantPropType>();
 
-export type PlasmicLayoutPageLayout__ArgsType = {};
+export type PlasmicLayoutPageLayout__ArgsType = {
+  children?: React.ReactNode;
+};
 type ArgPropType = keyof PlasmicLayoutPageLayout__ArgsType;
-export const PlasmicLayoutPageLayout__ArgProps = new Array<ArgPropType>();
+export const PlasmicLayoutPageLayout__ArgProps = new Array<ArgPropType>(
+  "children"
+);
 
 export type PlasmicLayoutPageLayout__OverridesType = {
   root?: Flex__<"div">;
+  layoutNavigationBar?: Flex__<typeof LayoutNavigationBar>;
+  freeBox?: Flex__<"div">;
+  svg?: Flex__<"svg">;
+  layoutFooter?: Flex__<typeof LayoutFooter>;
 };
 
 export interface DefaultLayoutPageLayoutProps {
+  children?: React.ReactNode;
   className?: string;
 }
 
@@ -162,18 +176,67 @@ function PlasmicLayoutPageLayout__RenderFunc(props: {
             hasVariant(globalVariants, "theme", "grayscale")
         }
       )}
-    />
+    >
+      <LayoutNavigationBar
+        data-plasmic-name={"layoutNavigationBar"}
+        data-plasmic-override={overrides.layoutNavigationBar}
+        className={classNames("__wab_instance", sty.layoutNavigationBar, {
+          [sty.layoutNavigationBarglobal_theme_dark]: hasVariant(
+            globalVariants,
+            "theme",
+            "dark"
+          )
+        })}
+      />
+
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      >
+        <Icon25Icon
+          data-plasmic-name={"svg"}
+          data-plasmic-override={overrides.svg}
+          className={classNames(projectcss.all, sty.svg)}
+          role={"img"}
+        />
+
+        {renderPlasmicSlot({
+          defaultContents: null,
+          value: args.children
+        })}
+      </div>
+      <LayoutFooter
+        data-plasmic-name={"layoutFooter"}
+        data-plasmic-override={overrides.layoutFooter}
+        className={classNames("__wab_instance", sty.layoutFooter, {
+          [sty.layoutFooterglobal_theme_dark]: hasVariant(
+            globalVariants,
+            "theme",
+            "dark"
+          )
+        })}
+      />
+    </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "layoutNavigationBar", "freeBox", "svg", "layoutFooter"],
+  layoutNavigationBar: ["layoutNavigationBar"],
+  freeBox: ["freeBox", "svg"],
+  svg: ["svg"],
+  layoutFooter: ["layoutFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  layoutNavigationBar: typeof LayoutNavigationBar;
+  freeBox: "div";
+  svg: "svg";
+  layoutFooter: typeof LayoutFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -236,6 +299,10 @@ export const PlasmicLayoutPageLayout = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    layoutNavigationBar: makeNodeComponent("layoutNavigationBar"),
+    freeBox: makeNodeComponent("freeBox"),
+    svg: makeNodeComponent("svg"),
+    layoutFooter: makeNodeComponent("layoutFooter"),
 
     // Metadata about props expected for PlasmicLayoutPageLayout
     internalVariantProps: PlasmicLayoutPageLayout__VariantProps,

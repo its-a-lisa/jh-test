@@ -59,14 +59,13 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import LayoutNavigationBar from "../../LayoutNavigationBar"; // plasmic-import: 9XazTiT1hZuq/component
+import LayoutPageLayout from "../../LayoutPageLayout"; // plasmic-import: Zd-Ayv7Gl3LR/component
 import SectionsHero from "../../SectionsHero"; // plasmic-import: ozwBdrLzTKiW/component
 import SectionsExlporationsContainer from "../../SectionsExlporationsContainer"; // plasmic-import: qbwUNgcK1xVZ/component
 import SectionsLineup from "../../SectionsLineup"; // plasmic-import: 4l0V7ewAu7P-/component
 import SectionsHighlightedCourses from "../../SectionsHighlightedCourses"; // plasmic-import: IX3qa1iiNnIn/component
 import SectionsOfferings from "../../SectionsOfferings"; // plasmic-import: vV0rS8SjXr0F/component
 import SectionsSellingPoints from "../../SectionsSellingPoints"; // plasmic-import: q-IzunE5qvnB/component
-import LayoutFooter from "../../LayoutFooter"; // plasmic-import: p_5BOqwmCgXz/component
 
 import {
   ThemeValue,
@@ -81,8 +80,6 @@ import plasmic_17_sds_foundation_system_css from "../17_sds_foundation_system/pl
 import projectcss from "./plasmic.module.css"; // plasmic-import: wboNivZUXwuALwWQq1HqWe/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Uf2krMk-vHwZ/css
 
-import Icon25Icon from "./icons/PlasmicIcon__Icon25"; // plasmic-import: vjYO-Sm9E83Z/icon
-
 createPlasmicElementProxy;
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -95,17 +92,13 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: Flex__<"div">;
-  layoutNavigationBar?: Flex__<typeof LayoutNavigationBar>;
-  freeBox?: Flex__<"div">;
-  svg?: Flex__<"svg">;
+  root?: Flex__<typeof LayoutPageLayout>;
   sectionsHero?: Flex__<typeof SectionsHero>;
   sectionsExlporationsContainer?: Flex__<typeof SectionsExlporationsContainer>;
   sectionsLineup?: Flex__<typeof SectionsLineup>;
   sectionsHighlightedCourses?: Flex__<typeof SectionsHighlightedCourses>;
   sectionsOfferings?: Flex__<typeof SectionsOfferings>;
   sectionsSellingPoints?: Flex__<typeof SectionsSellingPoints>;
-  layoutFooter?: Flex__<typeof LayoutFooter>;
 };
 
 export interface DefaultHomepageProps {}
@@ -164,59 +157,19 @@ function PlasmicHomepage__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <div
+        <LayoutPageLayout
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-          className={classNames(
-            projectcss.all,
-            projectcss.root_reset,
-            projectcss.plasmic_default_styles,
-            projectcss.plasmic_mixins,
-            projectcss.plasmic_tokens,
-            plasmic_17_sds_foundation_global_css.plasmic_tokens,
-            plasmic_17_sds_foundation_system_css.plasmic_tokens,
-            sty.root,
-            {
-              [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
-                hasVariant(globalVariants, "theme", "darkGrayscale"),
-              [plasmic_17_sds_foundation_global_css.global_theme_dark]:
-                hasVariant(globalVariants, "theme", "dark"),
-              [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
-                hasVariant(globalVariants, "theme", "grayscale"),
-              [sty.rootglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            }
-          )}
+          className={classNames("__wab_instance", sty.root, {
+            [sty.rootglobal_theme_dark]: hasVariant(
+              globalVariants,
+              "theme",
+              "dark"
+            )
+          })}
         >
-          <LayoutNavigationBar
-            data-plasmic-name={"layoutNavigationBar"}
-            data-plasmic-override={overrides.layoutNavigationBar}
-            className={classNames("__wab_instance", sty.layoutNavigationBar, {
-              [sty.layoutNavigationBarglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            })}
-          />
-
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
-            <Icon25Icon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(projectcss.all, sty.svg)}
-              role={"img"}
-            />
-          </div>
           <SectionsHero
             data-plasmic-name={"sectionsHero"}
             data-plasmic-override={overrides.sectionsHero}
@@ -293,19 +246,7 @@ function PlasmicHomepage__RenderFunc(props: {
               )
             })}
           />
-
-          <LayoutFooter
-            data-plasmic-name={"layoutFooter"}
-            data-plasmic-override={overrides.layoutFooter}
-            className={classNames("__wab_instance", sty.layoutFooter, {
-              [sty.layoutFooterglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            })}
-          />
-        </div>
+        </LayoutPageLayout>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
@@ -314,43 +255,31 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "layoutNavigationBar",
-    "freeBox",
-    "svg",
     "sectionsHero",
     "sectionsExlporationsContainer",
     "sectionsLineup",
     "sectionsHighlightedCourses",
     "sectionsOfferings",
-    "sectionsSellingPoints",
-    "layoutFooter"
+    "sectionsSellingPoints"
   ],
-  layoutNavigationBar: ["layoutNavigationBar"],
-  freeBox: ["freeBox", "svg"],
-  svg: ["svg"],
   sectionsHero: ["sectionsHero"],
   sectionsExlporationsContainer: ["sectionsExlporationsContainer"],
   sectionsLineup: ["sectionsLineup"],
   sectionsHighlightedCourses: ["sectionsHighlightedCourses"],
   sectionsOfferings: ["sectionsOfferings"],
-  sectionsSellingPoints: ["sectionsSellingPoints"],
-  layoutFooter: ["layoutFooter"]
+  sectionsSellingPoints: ["sectionsSellingPoints"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  layoutNavigationBar: typeof LayoutNavigationBar;
-  freeBox: "div";
-  svg: "svg";
+  root: typeof LayoutPageLayout;
   sectionsHero: typeof SectionsHero;
   sectionsExlporationsContainer: typeof SectionsExlporationsContainer;
   sectionsLineup: typeof SectionsLineup;
   sectionsHighlightedCourses: typeof SectionsHighlightedCourses;
   sectionsOfferings: typeof SectionsOfferings;
   sectionsSellingPoints: typeof SectionsSellingPoints;
-  layoutFooter: typeof LayoutFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -413,9 +342,6 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    layoutNavigationBar: makeNodeComponent("layoutNavigationBar"),
-    freeBox: makeNodeComponent("freeBox"),
-    svg: makeNodeComponent("svg"),
     sectionsHero: makeNodeComponent("sectionsHero"),
     sectionsExlporationsContainer: makeNodeComponent(
       "sectionsExlporationsContainer"
@@ -424,7 +350,6 @@ export const PlasmicHomepage = Object.assign(
     sectionsHighlightedCourses: makeNodeComponent("sectionsHighlightedCourses"),
     sectionsOfferings: makeNodeComponent("sectionsOfferings"),
     sectionsSellingPoints: makeNodeComponent("sectionsSellingPoints"),
-    layoutFooter: makeNodeComponent("layoutFooter"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
