@@ -25163,7 +25163,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h1",
       "type": "fontfamily",
-      "value": "VT323",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25173,7 +25173,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h2",
       "type": "fontfamily",
-      "value": "Press Start 2P",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25183,7 +25183,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h3",
       "type": "fontfamily",
-      "value": "Press Start 2P",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25193,7 +25193,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h4",
       "type": "fontfamily",
-      "value": "VT323",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25203,7 +25203,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h5",
       "type": "fontfamily",
-      "value": "Press Start 2P",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25213,7 +25213,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / heading / h6",
       "type": "fontfamily",
-      "value": "Press Start 2P",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",
@@ -25223,7 +25223,7 @@
     {
       "name": "17sds / ui-kit / theme / semantic / font / family / default / normal-text / base",
       "type": "fontfamily",
-      "value": "Russo One",
+      "value": "Orbitron",
       "category": "fontfamily",
       "meta": {
         "projectId": "wboNivZUXwuALwWQq1HqWe",

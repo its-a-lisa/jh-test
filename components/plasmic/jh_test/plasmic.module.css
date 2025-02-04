@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One%3Aital%2Cwght%400%2C400&family=VT323%3Aital%2Cwght%400%2C400&family=Press+Start+2P%3Aital%2Cwght%400%2C400&family=Inconsolata%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Roboto+Mono%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C200%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inter%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Roboto+Mono%3Aital%2Cwght%400%2C200%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C200%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700&display=swap");
 
 .plasmic_tokens {
   --token-Ze8SRyMKgyxb: var(--token-zwVdR2TS28Y-);
@@ -225,15 +225,15 @@
   --plasmic-token-17-sds-ui-kit-theme-semantic-color-primary-strong-transparent: var(
     --token-k_coOjfiVRpQ
   );
-  --token-n3esbhtuaG1U: Russo One;
+  --token-n3esbhtuaG1U: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-normal-text-base: var(
     --token-n3esbhtuaG1U
   );
-  --token-OsKy_SQQCoCe: VT323;
+  --token-OsKy_SQQCoCe: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-1: var(
     --token-OsKy_SQQCoCe
   );
-  --token-es2NdOXaQIDv: Press Start 2P;
+  --token-es2NdOXaQIDv: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-2: var(
     --token-es2NdOXaQIDv
   );
@@ -525,19 +525,19 @@
   --plasmic-token-17-sds-ui-kit-site-specific-purpose-text-color-tooltip: var(
     --token-O3Pr59F9Cknw
   );
-  --token-t5U6hR7G9ora: Press Start 2P;
+  --token-t5U6hR7G9ora: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-3: var(
     --token-t5U6hR7G9ora
   );
-  --token-QD7dn90JBuTV: VT323;
+  --token-QD7dn90JBuTV: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-4: var(
     --token-QD7dn90JBuTV
   );
-  --token-uyyL9nG_5lcQ: Press Start 2P;
+  --token-uyyL9nG_5lcQ: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-5: var(
     --token-uyyL9nG_5lcQ
   );
-  --token--h1NeQ37rwSM: Press Start 2P;
+  --token--h1NeQ37rwSM: Orbitron;
   --plasmic-token-17-sds-ui-kit-theme-semantic-font-family-default-heading-h-6: var(
     --token--h1NeQ37rwSM
   );
