@@ -60,9 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import LayoutPageLayout from "../../LayoutPageLayout"; // plasmic-import: Zd-Ayv7Gl3LR/component
-import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms";
-import { CmsRowImage } from "@plasmicpkgs/plasmic-cms";
-import { CmsRowField } from "@plasmicpkgs/plasmic-cms";
 
 import {
   ThemeValue,
@@ -87,20 +84,15 @@ export const PlasmicCatalogueLearnings__VariantProps =
 
 export type PlasmicCatalogueLearnings__ArgsType = {
   authorName?: string;
-  children?: React.ReactNode;
-  slot?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicCatalogueLearnings__ArgsType;
 export const PlasmicCatalogueLearnings__ArgProps = new Array<ArgPropType>(
-  "authorName",
-  "children",
-  "slot"
+  "authorName"
 );
 
 export type PlasmicCatalogueLearnings__OverridesType = {
   root?: Flex__<"div">;
   layoutPageLayout?: Flex__<typeof LayoutPageLayout>;
-  h1?: Flex__<"h1">;
 };
 
 export interface DefaultCatalogueLearningsProps {}
@@ -194,279 +186,7 @@ function PlasmicCatalogueLearnings__RenderFunc(props: {
             data-plasmic-name={"layoutPageLayout"}
             data-plasmic-override={overrides.layoutPageLayout}
             className={classNames("__wab_instance", sty.layoutPageLayout)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___1Wqi)}
-            >
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1
-                )}
-              >
-                {"Super Stars"}
-              </h1>
-              <CmsQueryRepeater
-                className={classNames(
-                  "__wab_instance",
-                  sty.cmsDataFetcher__lf3S
-                )}
-                desc={false}
-                emptyMessage={
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__aweD
-                        )}
-                      >
-                        {"No matching published entries found."}
-                      </div>
-                    )}
-                  </DataCtxReader__>
-                }
-                filterField={"title"}
-                forceEmptyState={false}
-                forceLoadingState={false}
-                limit={0}
-                loadingMessage={
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yzg7W
-                        )}
-                      >
-                        {"Loading..."}
-                      </div>
-                    )}
-                  </DataCtxReader__>
-                }
-                noAutoRepeat={false}
-                noLayout={false}
-                table={"learning"}
-                useDraft={false}
-              >
-                <DataCtxReader__>
-                  {$ctx => (
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__zi2H3)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__sjA2E
-                        )}
-                      >
-                        <CmsQueryRepeater
-                          className={classNames(
-                            "__wab_instance",
-                            sty.cmsDataFetcher__f7XX
-                          )}
-                          desc={false}
-                          emptyMessage={
-                            <DataCtxReader__>
-                              {$ctx => (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__ya8TD
-                                  )}
-                                >
-                                  {"No matching published entries found."}
-                                </div>
-                              )}
-                            </DataCtxReader__>
-                          }
-                          filterField={"_id"}
-                          filterValue={(() => {
-                            try {
-                              return $ctx.plasmicCmsLearningItem.data.thumbnail;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return undefined;
-                              }
-                              throw e;
-                            }
-                          })()}
-                          forceEmptyState={false}
-                          forceLoadingState={false}
-                          limit={0}
-                          loadingMessage={
-                            <DataCtxReader__>
-                              {$ctx => (
-                                <div
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__hm2Q
-                                  )}
-                                >
-                                  {"Loading..."}
-                                </div>
-                              )}
-                            </DataCtxReader__>
-                          }
-                          noAutoRepeat={false}
-                          noLayout={false}
-                          table={"media"}
-                          useDraft={false}
-                        >
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  sty.freeBox__uS5OJ
-                                )}
-                              >
-                                {renderPlasmicSlot({
-                                  defaultContents: (
-                                    <CmsRowImage
-                                      className={classNames(
-                                        "__wab_instance",
-                                        sty.cmsEntryImage__sZhP
-                                      )}
-                                      srcProp={"src"}
-                                      table={"media"}
-                                    >
-                                      <PlasmicImg__
-                                        alt={""}
-                                        className={classNames(sty.img__abohn)}
-                                        displayHeight={"200px"}
-                                        displayMaxHeight={"none"}
-                                        displayMaxWidth={"none"}
-                                        displayMinHeight={"0"}
-                                        displayMinWidth={"0"}
-                                        displayWidth={"200px"}
-                                        loading={"eager"}
-                                        src={
-                                          "https://studio.plasmic.app/static/img/placeholder-full.png"
-                                        }
-                                      />
-                                    </CmsRowImage>
-                                  ),
-                                  value: args.children
-                                })}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        </CmsQueryRepeater>
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox___05FF,
-                          {
-                            [sty.freeBoxglobal_theme_dark___05FFe6UCs]:
-                              hasVariant(globalVariants, "theme", "dark")
-                          }
-                        )}
-                        onClick={async event => {
-                          const $steps = {};
-
-                          $steps["goToPage"] = true
-                            ? (() => {
-                                const actionArgs = {
-                                  destination: (() => {
-                                    try {
-                                      return `/learning/${$ctx.plasmicCmsLearningItem.data.slug}`;
-                                    } catch (e) {
-                                      if (
-                                        e instanceof TypeError ||
-                                        e?.plasmicType ===
-                                          "PlasmicUndefinedDataError"
-                                      ) {
-                                        return undefined;
-                                      }
-                                      throw e;
-                                    }
-                                  })()
-                                };
-                                return (({ destination }) => {
-                                  if (
-                                    typeof destination === "string" &&
-                                    destination.startsWith("#")
-                                  ) {
-                                    document
-                                      .getElementById(destination.substr(1))
-                                      .scrollIntoView({ behavior: "smooth" });
-                                  } else {
-                                    __nextRouter?.push(destination);
-                                  }
-                                })?.apply(null, [actionArgs]);
-                              })()
-                            : undefined;
-                          if (
-                            $steps["goToPage"] != null &&
-                            typeof $steps["goToPage"] === "object" &&
-                            typeof $steps["goToPage"].then === "function"
-                          ) {
-                            $steps["goToPage"] = await $steps["goToPage"];
-                          }
-                        }}
-                      >
-                        {renderPlasmicSlot({
-                          defaultContents: (
-                            <CmsRowField
-                              className={classNames(
-                                "__wab_instance",
-                                sty.cmsEntryField___2F98A
-                              )}
-                              field={"title"}
-                              themeResetClassName={classNames(
-                                projectcss.root_reset,
-                                projectcss.root_reset_tags,
-                                projectcss.plasmic_default_styles,
-                                projectcss.plasmic_mixins,
-                                projectcss.plasmic_tokens,
-                                plasmic_17_sds_foundation_global_css.plasmic_tokens,
-                                plasmic_17_sds_foundation_system_css.plasmic_tokens,
-                                {
-                                  [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
-                                    hasVariant(
-                                      globalVariants,
-                                      "theme",
-                                      "darkGrayscale"
-                                    ),
-                                  [plasmic_17_sds_foundation_global_css.global_theme_dark]:
-                                    hasVariant(globalVariants, "theme", "dark"),
-                                  [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
-                                    hasVariant(
-                                      globalVariants,
-                                      "theme",
-                                      "grayscale"
-                                    )
-                                }
-                              )}
-                            />
-                          ),
-
-                          value: args.slot
-                        })}
-                      </div>
-                    </Stack__>
-                  )}
-                </DataCtxReader__>
-              </CmsQueryRepeater>
-            </Stack__>
-          </LayoutPageLayout>
+          />
         </Stack__>
       </div>
     </React.Fragment>
@@ -474,9 +194,8 @@ function PlasmicCatalogueLearnings__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "layoutPageLayout", "h1"],
-  layoutPageLayout: ["layoutPageLayout", "h1"],
-  h1: ["h1"]
+  root: ["root", "layoutPageLayout"],
+  layoutPageLayout: ["layoutPageLayout"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -484,7 +203,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   layoutPageLayout: typeof LayoutPageLayout;
-  h1: "h1";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -548,7 +266,6 @@ export const PlasmicCatalogueLearnings = Object.assign(
   {
     // Helper components rendering sub-elements
     layoutPageLayout: makeNodeComponent("layoutPageLayout"),
-    h1: makeNodeComponent("h1"),
 
     // Metadata about props expected for PlasmicCatalogueLearnings
     internalVariantProps: PlasmicCatalogueLearnings__VariantProps,

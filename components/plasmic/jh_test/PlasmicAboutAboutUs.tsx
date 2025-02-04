@@ -60,8 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import LayoutPageLayout from "../../LayoutPageLayout"; // plasmic-import: Zd-Ayv7Gl3LR/component
-import { CmsQueryRepeater } from "@plasmicpkgs/plasmic-cms";
-import { CmsRowField } from "@plasmicpkgs/plasmic-cms";
 
 import {
   ThemeValue,
@@ -89,7 +87,6 @@ export const PlasmicAboutAboutUs__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAboutAboutUs__OverridesType = {
   root?: Flex__<typeof LayoutPageLayout>;
-  h2?: Flex__<"h2">;
 };
 
 export interface DefaultAboutAboutUsProps {}
@@ -153,357 +150,20 @@ function PlasmicAboutAboutUs__RenderFunc(props: {
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-        >
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__tUacy)}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox___8MehX)}
-            >
-              <h2
-                data-plasmic-name={"h2"}
-                data-plasmic-override={overrides.h2}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2
-                )}
-              >
-                {"Just Hacking Training (JHT)"}
-              </h2>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__w9PsI)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__kCmai
-                  )}
-                >
-                  {"Focused Technical Training for All Levels"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__xyFff
-                  )}
-                >
-                  {
-                    "JHT is a labor of love for Co-Founders John Hammond and Don Donzal. They are long-time friends that decided to bet on themselves and do something unique in the training space that would help educate and give back to the community. All startups should do their best to differentiate themselves from the industry, especially one as crowded as training and education. We hope to do that in 2 fundamental ways."
-                  }
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__vElpv)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__gJGnT
-                  )}
-                >
-                  {
-                    "All Star Lineup of Courseware Developers and Content Creators"
-                  }
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__o3YKp
-                  )}
-                >
-                  {
-                    "John and Don have been incredibly lucky over the years to have worked with amazing, talented people who are not only super smart but also are experienced practitioners. It\u2019s these friends we\u2019ve made in the community that already come pre-vetted to a certain degree. It\u2019s a much safer bet and much less time consuming to go with this model than an open call for trainers.\n\nThey say don\u2019t work with friends or family, but we\u2019ve been having a blast. Including others is making it that much more exciting. We also believe that a rising tide lifts all boats. With the list of experts and stars joining us on this journey listed on our front page, we\u2019re sure to make a ton of waves in the industry.\n\nAnd we\u2019re just getting warmed up!!\n"
-                  }
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__dVmJj)}
-              >
-                <h3
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h3,
-                    projectcss.__wab_text,
-                    sty.h3__h9KRi
-                  )}
-                >
-                  {"New Releases"}
-                </h3>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___4YAtt
-                  )}
-                >
-                  {
-                    "It is our intention to announce new courses during the first week of every month. Mid-month, we will announce the arrival of UCs, HALs and CTFs. These announcements will be from John\u2019s social media accounts and his brand newsletter, Cybersecurity Shenanigans. Sign up below in the footer of this site to get lots of great content directly in your inbox.\n\nKeep an eye out for more livestreams from John as well, where he will not only share creative content but also interview many industry experts including our own courseware developers."
-                  }
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__pLg9M
-                  )}
-                >
-                  {"Thanks,\nJohn, Don and the JHT Team"}
-                </div>
-              </Stack__>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__acwcu)}
-            >
-              <CmsQueryRepeater
-                className={classNames(
-                  "__wab_instance",
-                  sty.cmsDataFetcher__xV2Ae
-                )}
-                desc={false}
-                emptyMessage={
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <CmsRowField
-                        className={classNames(
-                          "__wab_instance",
-                          sty.cmsEntryField__tPz3M
-                        )}
-                        themeResetClassName={classNames(
-                          projectcss.root_reset,
-                          projectcss.root_reset_tags,
-                          projectcss.plasmic_default_styles,
-                          projectcss.plasmic_mixins,
-                          projectcss.plasmic_tokens,
-                          plasmic_17_sds_foundation_global_css.plasmic_tokens,
-                          plasmic_17_sds_foundation_system_css.plasmic_tokens,
-                          {
-                            [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
-                              hasVariant(
-                                globalVariants,
-                                "theme",
-                                "darkGrayscale"
-                              ),
-                            [plasmic_17_sds_foundation_global_css.global_theme_dark]:
-                              hasVariant(globalVariants, "theme", "dark"),
-                            [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
-                              hasVariant(globalVariants, "theme", "grayscale")
-                          }
-                        )}
-                      />
-                    )}
-                  </DataCtxReader__>
-                }
-                fields={[]}
-                filterField={"author"}
-                forceEmptyState={false}
-                forceLoadingState={false}
-                limit={0}
-                loadingMessage={
-                  <DataCtxReader__>
-                    {$ctx => (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__u22G
-                        )}
-                      >
-                        {"Loading..."}
-                      </div>
-                    )}
-                  </DataCtxReader__>
-                }
-                noAutoRepeat={false}
-                noLayout={false}
-                table={"leadershipTeam"}
-                useDraft={false}
-              >
-                <DataCtxReader__>
-                  {$ctx => (
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__kM0K)}
-                    >
-                      <CmsQueryRepeater
-                        className={classNames(
-                          "__wab_instance",
-                          sty.cmsDataFetcher__x09M2
-                        )}
-                        desc={false}
-                        emptyMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <CmsRowField
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.cmsEntryField___3MMjm
-                                )}
-                                themeResetClassName={classNames(
-                                  projectcss.root_reset,
-                                  projectcss.root_reset_tags,
-                                  projectcss.plasmic_default_styles,
-                                  projectcss.plasmic_mixins,
-                                  projectcss.plasmic_tokens,
-                                  plasmic_17_sds_foundation_global_css.plasmic_tokens,
-                                  plasmic_17_sds_foundation_system_css.plasmic_tokens,
-                                  {
-                                    [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "darkGrayscale"
-                                      ),
-                                    [plasmic_17_sds_foundation_global_css.global_theme_dark]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "dark"
-                                      ),
-                                    [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "grayscale"
-                                      )
-                                  }
-                                )}
-                              />
-                            )}
-                          </DataCtxReader__>
-                        }
-                        fields={[]}
-                        filterField={"_id"}
-                        filterValue={(() => {
-                          try {
-                            return $ctx.plasmicCmsLeadershipTeamItem.data
-                              .author;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return undefined;
-                            }
-                            throw e;
-                          }
-                        })()}
-                        forceEmptyState={false}
-                        forceLoadingState={false}
-                        limit={0}
-                        loadingMessage={
-                          <DataCtxReader__>
-                            {$ctx => (
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text___1U8Vy
-                                )}
-                              >
-                                {"Loading..."}
-                              </div>
-                            )}
-                          </DataCtxReader__>
-                        }
-                        noAutoRepeat={false}
-                        noLayout={false}
-                        table={"author"}
-                        useDraft={false}
-                      >
-                        <DataCtxReader__>
-                          {$ctx => (
-                            <Stack__
-                              as={"div"}
-                              hasGap={true}
-                              className={classNames(
-                                projectcss.all,
-                                sty.freeBox__oOPmj
-                              )}
-                            >
-                              <CmsRowField
-                                className={classNames(
-                                  "__wab_instance",
-                                  sty.cmsEntryField__zmUtF
-                                )}
-                                field={"name"}
-                                table={"author"}
-                                themeResetClassName={classNames(
-                                  projectcss.root_reset,
-                                  projectcss.root_reset_tags,
-                                  projectcss.plasmic_default_styles,
-                                  projectcss.plasmic_mixins,
-                                  projectcss.plasmic_tokens,
-                                  plasmic_17_sds_foundation_global_css.plasmic_tokens,
-                                  plasmic_17_sds_foundation_system_css.plasmic_tokens,
-                                  {
-                                    [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "darkGrayscale"
-                                      ),
-                                    [plasmic_17_sds_foundation_global_css.global_theme_dark]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "dark"
-                                      ),
-                                    [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
-                                      hasVariant(
-                                        globalVariants,
-                                        "theme",
-                                        "grayscale"
-                                      )
-                                  }
-                                )}
-                              />
-                            </Stack__>
-                          )}
-                        </DataCtxReader__>
-                      </CmsQueryRepeater>
-                    </Stack__>
-                  )}
-                </DataCtxReader__>
-              </CmsQueryRepeater>
-            </Stack__>
-          </Stack__>
-        </LayoutPageLayout>
+        />
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h2"],
-  h2: ["h2"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: typeof LayoutPageLayout;
-  h2: "h2";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -566,7 +226,6 @@ export const PlasmicAboutAboutUs = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h2: makeNodeComponent("h2"),
 
     // Metadata about props expected for PlasmicAboutAboutUs
     internalVariantProps: PlasmicAboutAboutUs__VariantProps,

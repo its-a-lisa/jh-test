@@ -59,13 +59,14 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import LayoutPageLayout from "../../LayoutPageLayout"; // plasmic-import: Zd-Ayv7Gl3LR/component
+import LayoutNavigationBar from "../../LayoutNavigationBar"; // plasmic-import: 9XazTiT1hZuq/component
 import SectionsHero from "../../SectionsHero"; // plasmic-import: ozwBdrLzTKiW/component
 import SectionsExlporationsContainer from "../../SectionsExlporationsContainer"; // plasmic-import: qbwUNgcK1xVZ/component
 import SectionsLineup from "../../SectionsLineup"; // plasmic-import: 4l0V7ewAu7P-/component
 import SectionsHighlightedCourses from "../../SectionsHighlightedCourses"; // plasmic-import: IX3qa1iiNnIn/component
 import SectionsOfferings from "../../SectionsOfferings"; // plasmic-import: vV0rS8SjXr0F/component
 import SectionsSellingPoints from "../../SectionsSellingPoints"; // plasmic-import: q-IzunE5qvnB/component
+import LayoutFooter from "../../LayoutFooter"; // plasmic-import: p_5BOqwmCgXz/component
 
 import {
   ThemeValue,
@@ -80,6 +81,8 @@ import plasmic_17_sds_foundation_system_css from "../17_sds_foundation_system/pl
 import projectcss from "./plasmic.module.css"; // plasmic-import: wboNivZUXwuALwWQq1HqWe/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Uf2krMk-vHwZ/css
 
+import Icon25Icon from "./icons/PlasmicIcon__Icon25"; // plasmic-import: vjYO-Sm9E83Z/icon
+
 createPlasmicElementProxy;
 
 export type PlasmicHomepage__VariantMembers = {};
@@ -93,13 +96,16 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  layoutPageLayout?: Flex__<typeof LayoutPageLayout>;
+  layoutNavigationBar?: Flex__<typeof LayoutNavigationBar>;
+  freeBox?: Flex__<"div">;
+  svg?: Flex__<"svg">;
   sectionsHero?: Flex__<typeof SectionsHero>;
   sectionsExlporationsContainer?: Flex__<typeof SectionsExlporationsContainer>;
   sectionsLineup?: Flex__<typeof SectionsLineup>;
   sectionsHighlightedCourses?: Flex__<typeof SectionsHighlightedCourses>;
   sectionsOfferings?: Flex__<typeof SectionsOfferings>;
   sectionsSellingPoints?: Flex__<typeof SectionsSellingPoints>;
+  layoutFooter?: Flex__<typeof LayoutFooter>;
 };
 
 export interface DefaultHomepageProps {}
@@ -187,98 +193,118 @@ function PlasmicHomepage__RenderFunc(props: {
             }
           )}
         >
-          <LayoutPageLayout
-            data-plasmic-name={"layoutPageLayout"}
-            data-plasmic-override={overrides.layoutPageLayout}
-            className={classNames("__wab_instance", sty.layoutPageLayout, {
-              [sty.layoutPageLayoutglobal_theme_dark]: hasVariant(
+          <LayoutNavigationBar
+            data-plasmic-name={"layoutNavigationBar"}
+            data-plasmic-override={overrides.layoutNavigationBar}
+            className={classNames("__wab_instance", sty.layoutNavigationBar, {
+              [sty.layoutNavigationBarglobal_theme_dark]: hasVariant(
                 globalVariants,
                 "theme",
                 "dark"
               )
             })}
+          />
+
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
           >
-            <SectionsHero
-              data-plasmic-name={"sectionsHero"}
-              data-plasmic-override={overrides.sectionsHero}
-              className={classNames("__wab_instance", sty.sectionsHero, {
-                [sty.sectionsHeroglobal_theme_dark]: hasVariant(
+            <Icon25Icon
+              data-plasmic-name={"svg"}
+              data-plasmic-override={overrides.svg}
+              className={classNames(projectcss.all, sty.svg)}
+              role={"img"}
+            />
+          </div>
+          <SectionsHero
+            data-plasmic-name={"sectionsHero"}
+            data-plasmic-override={overrides.sectionsHero}
+            className={classNames("__wab_instance", sty.sectionsHero, {
+              [sty.sectionsHeroglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          />
+
+          <SectionsExlporationsContainer
+            data-plasmic-name={"sectionsExlporationsContainer"}
+            data-plasmic-override={overrides.sectionsExlporationsContainer}
+            className={classNames(
+              "__wab_instance",
+              sty.sectionsExlporationsContainer,
+              {
+                [sty.sectionsExlporationsContainerglobal_theme_dark]:
+                  hasVariant(globalVariants, "theme", "dark")
+              }
+            )}
+          />
+
+          <SectionsLineup
+            data-plasmic-name={"sectionsLineup"}
+            data-plasmic-override={overrides.sectionsLineup}
+            className={classNames("__wab_instance", sty.sectionsLineup, {
+              [sty.sectionsLineupglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          />
+
+          <SectionsHighlightedCourses
+            data-plasmic-name={"sectionsHighlightedCourses"}
+            data-plasmic-override={overrides.sectionsHighlightedCourses}
+            className={classNames(
+              "__wab_instance",
+              sty.sectionsHighlightedCourses,
+              {
+                [sty.sectionsHighlightedCoursesglobal_theme_dark]: hasVariant(
                   globalVariants,
                   "theme",
                   "dark"
                 )
-              })}
-            />
+              }
+            )}
+          />
 
-            <SectionsExlporationsContainer
-              data-plasmic-name={"sectionsExlporationsContainer"}
-              data-plasmic-override={overrides.sectionsExlporationsContainer}
-              className={classNames(
-                "__wab_instance",
-                sty.sectionsExlporationsContainer,
-                {
-                  [sty.sectionsExlporationsContainerglobal_theme_dark]:
-                    hasVariant(globalVariants, "theme", "dark")
-                }
-              )}
-            />
+          <SectionsOfferings
+            data-plasmic-name={"sectionsOfferings"}
+            data-plasmic-override={overrides.sectionsOfferings}
+            className={classNames("__wab_instance", sty.sectionsOfferings, {
+              [sty.sectionsOfferingsglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          />
 
-            <SectionsLineup
-              data-plasmic-name={"sectionsLineup"}
-              data-plasmic-override={overrides.sectionsLineup}
-              className={classNames("__wab_instance", sty.sectionsLineup, {
-                [sty.sectionsLineupglobal_theme_dark]: hasVariant(
-                  globalVariants,
-                  "theme",
-                  "dark"
-                )
-              })}
-            />
+          <SectionsSellingPoints
+            data-plasmic-name={"sectionsSellingPoints"}
+            data-plasmic-override={overrides.sectionsSellingPoints}
+            className={classNames("__wab_instance", sty.sectionsSellingPoints, {
+              [sty.sectionsSellingPointsglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          />
 
-            <SectionsHighlightedCourses
-              data-plasmic-name={"sectionsHighlightedCourses"}
-              data-plasmic-override={overrides.sectionsHighlightedCourses}
-              className={classNames(
-                "__wab_instance",
-                sty.sectionsHighlightedCourses,
-                {
-                  [sty.sectionsHighlightedCoursesglobal_theme_dark]: hasVariant(
-                    globalVariants,
-                    "theme",
-                    "dark"
-                  )
-                }
-              )}
-            />
-
-            <SectionsOfferings
-              data-plasmic-name={"sectionsOfferings"}
-              data-plasmic-override={overrides.sectionsOfferings}
-              className={classNames("__wab_instance", sty.sectionsOfferings, {
-                [sty.sectionsOfferingsglobal_theme_dark]: hasVariant(
-                  globalVariants,
-                  "theme",
-                  "dark"
-                )
-              })}
-            />
-
-            <SectionsSellingPoints
-              data-plasmic-name={"sectionsSellingPoints"}
-              data-plasmic-override={overrides.sectionsSellingPoints}
-              className={classNames(
-                "__wab_instance",
-                sty.sectionsSellingPoints,
-                {
-                  [sty.sectionsSellingPointsglobal_theme_dark]: hasVariant(
-                    globalVariants,
-                    "theme",
-                    "dark"
-                  )
-                }
-              )}
-            />
-          </LayoutPageLayout>
+          <LayoutFooter
+            data-plasmic-name={"layoutFooter"}
+            data-plasmic-override={overrides.layoutFooter}
+            className={classNames("__wab_instance", sty.layoutFooter, {
+              [sty.layoutFooterglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            })}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -288,42 +314,43 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "layoutPageLayout",
+    "layoutNavigationBar",
+    "freeBox",
+    "svg",
     "sectionsHero",
     "sectionsExlporationsContainer",
     "sectionsLineup",
     "sectionsHighlightedCourses",
     "sectionsOfferings",
-    "sectionsSellingPoints"
+    "sectionsSellingPoints",
+    "layoutFooter"
   ],
-  layoutPageLayout: [
-    "layoutPageLayout",
-    "sectionsHero",
-    "sectionsExlporationsContainer",
-    "sectionsLineup",
-    "sectionsHighlightedCourses",
-    "sectionsOfferings",
-    "sectionsSellingPoints"
-  ],
+  layoutNavigationBar: ["layoutNavigationBar"],
+  freeBox: ["freeBox", "svg"],
+  svg: ["svg"],
   sectionsHero: ["sectionsHero"],
   sectionsExlporationsContainer: ["sectionsExlporationsContainer"],
   sectionsLineup: ["sectionsLineup"],
   sectionsHighlightedCourses: ["sectionsHighlightedCourses"],
   sectionsOfferings: ["sectionsOfferings"],
-  sectionsSellingPoints: ["sectionsSellingPoints"]
+  sectionsSellingPoints: ["sectionsSellingPoints"],
+  layoutFooter: ["layoutFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  layoutPageLayout: typeof LayoutPageLayout;
+  layoutNavigationBar: typeof LayoutNavigationBar;
+  freeBox: "div";
+  svg: "svg";
   sectionsHero: typeof SectionsHero;
   sectionsExlporationsContainer: typeof SectionsExlporationsContainer;
   sectionsLineup: typeof SectionsLineup;
   sectionsHighlightedCourses: typeof SectionsHighlightedCourses;
   sectionsOfferings: typeof SectionsOfferings;
   sectionsSellingPoints: typeof SectionsSellingPoints;
+  layoutFooter: typeof LayoutFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -386,7 +413,9 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    layoutPageLayout: makeNodeComponent("layoutPageLayout"),
+    layoutNavigationBar: makeNodeComponent("layoutNavigationBar"),
+    freeBox: makeNodeComponent("freeBox"),
+    svg: makeNodeComponent("svg"),
     sectionsHero: makeNodeComponent("sectionsHero"),
     sectionsExlporationsContainer: makeNodeComponent(
       "sectionsExlporationsContainer"
@@ -395,6 +424,7 @@ export const PlasmicHomepage = Object.assign(
     sectionsHighlightedCourses: makeNodeComponent("sectionsHighlightedCourses"),
     sectionsOfferings: makeNodeComponent("sectionsOfferings"),
     sectionsSellingPoints: makeNodeComponent("sectionsSellingPoints"),
+    layoutFooter: makeNodeComponent("layoutFooter"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

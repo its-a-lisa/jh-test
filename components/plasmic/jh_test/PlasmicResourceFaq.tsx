@@ -87,9 +87,6 @@ export const PlasmicResourceFaq__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicResourceFaq__OverridesType = {
   root?: Flex__<typeof LayoutPageLayout>;
-  h1?: Flex__<"h1">;
-  h5?: Flex__<"h5">;
-  text?: Flex__<"div">;
 };
 
 export interface DefaultResourceFaqProps {}
@@ -153,153 +150,20 @@ function PlasmicResourceFaq__RenderFunc(props: {
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-        >
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__w0Hto)}
-          >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
-            >
-              {"Frequently asked questions"}
-            </h1>
-            {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-              (() => {
-                try {
-                  return (() => {
-                    {
-                      return [
-                        {
-                          question: "What is Just Hacking Training (JHT)?",
-                          answer:
-                            "Just Hacking Training (JHT) is a platform offering focused technical training in cybersecurity for all levels. We provide various types of learning, including Courses, Upskill Challenges (UCs), Hack-Alongs (HALs), and Capture the Flag (CTF) Archives, catering to different learning preferences and skill levels."
-                        },
-                        {
-                          question: "What types of learning does JHT offer?",
-                          answer:
-                            "JHT offers four main types of learning:\n\n- **Upskill Challenges (UCs):** Free, bite-sized lessons designed to be completed in 10\u201330 minutes, focusing on a single tool or concept. They include quizzes to test comprehension and require no external resources.\n\n- **Hack-Alongs (HALs):** Structured lessons with virtual labs accompanying a public YouTube video from our training developers. They allow you to follow along with the presenter, providing step-by-step instructions and screenshots, typically lasting 30\u2013120 minutes.\n\n- **Capture the Flag (CTF) Archives:** Live, playable archives of previously held CTF events, offering challenges of varying difficulty without time constraints or scoreboards. Each CTF comes with a web-based version of Kali Linux to tackle the challenges.\n\n- **Courses & Paths:** Comprehensive courses ranging from 4\u201310 hours of student time, including video instruction, quizzes, hands-on activities, and possibly homework. Courses are self-paced, with some offering live, instructor-led versions in the future."
-                        },
-                        {
-                          question: "How can I get started with JHT?",
-                          answer:
-                            "If you're new to cybersecurity, we recommend starting with our free Upskill Challenges (UCs), which are short and focused lessons. For a more guided experience, our Hack-Alongs (HALs) provide step-by-step instructions alongside video content. As you progress, you can explore our Courses & Paths for more in-depth learning or tackle our Capture the Flag (CTF) Archives to test your skills."
-                        },
-                        {
-                          question: "What are credits, and how do they work?",
-                          answer:
-                            "Credits allow you to access our browser-based virtual lab environment on learn.justhacking.com. Each enrollment in a course, Hack-Along, or CTF provides a set amount of credits, corresponding to the required lab time and resources. For example, a 2-hour Hack-Along provides 4 hours' worth of credits. If you run out of credits, you can purchase more on the platform."
-                        },
-                        {
-                          question: "How can I contact JHT for support?",
-                          answer:
-                            "For support, you can join our JH Discord server and grab a student role by clicking 'Engage with the JHT Student Community.' From there, open a ticket in the `#jht-support` channel to speak with a member of the Just Hacking team."
-                        }
-                      ];
-                    }
-                  })();
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return [];
-                  }
-                  throw e;
-                }
-              })()
-            ).map((__plasmic_item_0, __plasmic_idx_0) => {
-              const currentItem = __plasmic_item_0;
-              const currentIndex = __plasmic_idx_0;
-              return (
-                <Stack__
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__n5Bg8)}
-                  key={currentIndex}
-                >
-                  <h5
-                    data-plasmic-name={"h5"}
-                    data-plasmic-override={overrides.h5}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h5,
-                      projectcss.__wab_text,
-                      sty.h5
-                    )}
-                  >
-                    <React.Fragment>
-                      {(() => {
-                        try {
-                          return currentItem.question;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "You won't believe what happens next.";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </React.Fragment>
-                  </h5>
-                  <div
-                    data-plasmic-name={"text"}
-                    data-plasmic-override={overrides.text}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text
-                    )}
-                  >
-                    <React.Fragment>
-                      {(() => {
-                        try {
-                          return currentItem.answer;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    </React.Fragment>
-                  </div>
-                </Stack__>
-              );
-            })}
-          </Stack__>
-        </LayoutPageLayout>
+        />
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "h5", "text"],
-  h1: ["h1"],
-  h5: ["h5"],
-  text: ["text"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: typeof LayoutPageLayout;
-  h1: "h1";
-  h5: "h5";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -362,9 +226,6 @@ export const PlasmicResourceFaq = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h1: makeNodeComponent("h1"),
-    h5: makeNodeComponent("h5"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicResourceFaq
     internalVariantProps: PlasmicResourceFaq__VariantProps,
