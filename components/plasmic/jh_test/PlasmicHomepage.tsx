@@ -92,7 +92,8 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: Flex__<typeof LayoutPageLayout>;
+  root?: Flex__<"div">;
+  layoutPageLayout?: Flex__<typeof LayoutPageLayout>;
   sectionsHero?: Flex__<typeof SectionsHero>;
   sectionsExlporationsContainer?: Flex__<typeof SectionsExlporationsContainer>;
   sectionsLineup?: Flex__<typeof SectionsLineup>;
@@ -157,96 +158,128 @@ function PlasmicHomepage__RenderFunc(props: {
       `}</style>
 
       <div className={projectcss.plasmic_page_wrapper}>
-        <LayoutPageLayout
+        <div
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
-          className={classNames("__wab_instance", sty.root, {
-            [sty.rootglobal_theme_dark]: hasVariant(
-              globalVariants,
-              "theme",
-              "dark"
-            )
-          })}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            plasmic_17_sds_foundation_global_css.plasmic_tokens,
+            plasmic_17_sds_foundation_system_css.plasmic_tokens,
+            sty.root,
+            {
+              [plasmic_17_sds_foundation_global_css.global_theme_darkGrayscale]:
+                hasVariant(globalVariants, "theme", "darkGrayscale"),
+              [plasmic_17_sds_foundation_global_css.global_theme_dark]:
+                hasVariant(globalVariants, "theme", "dark"),
+              [plasmic_17_sds_foundation_global_css.global_theme_grayscale]:
+                hasVariant(globalVariants, "theme", "grayscale"),
+              [sty.rootglobal_theme_dark]: hasVariant(
+                globalVariants,
+                "theme",
+                "dark"
+              )
+            }
+          )}
         >
-          <SectionsHero
-            data-plasmic-name={"sectionsHero"}
-            data-plasmic-override={overrides.sectionsHero}
-            className={classNames("__wab_instance", sty.sectionsHero, {
-              [sty.sectionsHeroglobal_theme_dark]: hasVariant(
+          <LayoutPageLayout
+            data-plasmic-name={"layoutPageLayout"}
+            data-plasmic-override={overrides.layoutPageLayout}
+            className={classNames("__wab_instance", sty.layoutPageLayout, {
+              [sty.layoutPageLayoutglobal_theme_dark]: hasVariant(
                 globalVariants,
                 "theme",
                 "dark"
               )
             })}
-          />
-
-          <SectionsExlporationsContainer
-            data-plasmic-name={"sectionsExlporationsContainer"}
-            data-plasmic-override={overrides.sectionsExlporationsContainer}
-            className={classNames(
-              "__wab_instance",
-              sty.sectionsExlporationsContainer,
-              {
-                [sty.sectionsExlporationsContainerglobal_theme_dark]:
-                  hasVariant(globalVariants, "theme", "dark")
-              }
-            )}
-          />
-
-          <SectionsLineup
-            data-plasmic-name={"sectionsLineup"}
-            data-plasmic-override={overrides.sectionsLineup}
-            className={classNames("__wab_instance", sty.sectionsLineup, {
-              [sty.sectionsLineupglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            })}
-          />
-
-          <SectionsHighlightedCourses
-            data-plasmic-name={"sectionsHighlightedCourses"}
-            data-plasmic-override={overrides.sectionsHighlightedCourses}
-            className={classNames(
-              "__wab_instance",
-              sty.sectionsHighlightedCourses,
-              {
-                [sty.sectionsHighlightedCoursesglobal_theme_dark]: hasVariant(
+          >
+            <SectionsHero
+              data-plasmic-name={"sectionsHero"}
+              data-plasmic-override={overrides.sectionsHero}
+              className={classNames("__wab_instance", sty.sectionsHero, {
+                [sty.sectionsHeroglobal_theme_dark]: hasVariant(
                   globalVariants,
                   "theme",
                   "dark"
                 )
-              }
-            )}
-          />
+              })}
+            />
 
-          <SectionsOfferings
-            data-plasmic-name={"sectionsOfferings"}
-            data-plasmic-override={overrides.sectionsOfferings}
-            className={classNames("__wab_instance", sty.sectionsOfferings, {
-              [sty.sectionsOfferingsglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            })}
-          />
+            <SectionsExlporationsContainer
+              data-plasmic-name={"sectionsExlporationsContainer"}
+              data-plasmic-override={overrides.sectionsExlporationsContainer}
+              className={classNames(
+                "__wab_instance",
+                sty.sectionsExlporationsContainer,
+                {
+                  [sty.sectionsExlporationsContainerglobal_theme_dark]:
+                    hasVariant(globalVariants, "theme", "dark")
+                }
+              )}
+            />
 
-          <SectionsSellingPoints
-            data-plasmic-name={"sectionsSellingPoints"}
-            data-plasmic-override={overrides.sectionsSellingPoints}
-            className={classNames("__wab_instance", sty.sectionsSellingPoints, {
-              [sty.sectionsSellingPointsglobal_theme_dark]: hasVariant(
-                globalVariants,
-                "theme",
-                "dark"
-              )
-            })}
-          />
-        </LayoutPageLayout>
+            <SectionsLineup
+              data-plasmic-name={"sectionsLineup"}
+              data-plasmic-override={overrides.sectionsLineup}
+              className={classNames("__wab_instance", sty.sectionsLineup, {
+                [sty.sectionsLineupglobal_theme_dark]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "dark"
+                )
+              })}
+            />
+
+            <SectionsHighlightedCourses
+              data-plasmic-name={"sectionsHighlightedCourses"}
+              data-plasmic-override={overrides.sectionsHighlightedCourses}
+              className={classNames(
+                "__wab_instance",
+                sty.sectionsHighlightedCourses,
+                {
+                  [sty.sectionsHighlightedCoursesglobal_theme_dark]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "dark"
+                  )
+                }
+              )}
+            />
+
+            <SectionsOfferings
+              data-plasmic-name={"sectionsOfferings"}
+              data-plasmic-override={overrides.sectionsOfferings}
+              className={classNames("__wab_instance", sty.sectionsOfferings, {
+                [sty.sectionsOfferingsglobal_theme_dark]: hasVariant(
+                  globalVariants,
+                  "theme",
+                  "dark"
+                )
+              })}
+            />
+
+            <SectionsSellingPoints
+              data-plasmic-name={"sectionsSellingPoints"}
+              data-plasmic-override={overrides.sectionsSellingPoints}
+              className={classNames(
+                "__wab_instance",
+                sty.sectionsSellingPoints,
+                {
+                  [sty.sectionsSellingPointsglobal_theme_dark]: hasVariant(
+                    globalVariants,
+                    "theme",
+                    "dark"
+                  )
+                }
+              )}
+            />
+          </LayoutPageLayout>
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
@@ -255,6 +288,16 @@ function PlasmicHomepage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
+    "layoutPageLayout",
+    "sectionsHero",
+    "sectionsExlporationsContainer",
+    "sectionsLineup",
+    "sectionsHighlightedCourses",
+    "sectionsOfferings",
+    "sectionsSellingPoints"
+  ],
+  layoutPageLayout: [
+    "layoutPageLayout",
     "sectionsHero",
     "sectionsExlporationsContainer",
     "sectionsLineup",
@@ -273,7 +316,8 @@ type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: typeof LayoutPageLayout;
+  root: "div";
+  layoutPageLayout: typeof LayoutPageLayout;
   sectionsHero: typeof SectionsHero;
   sectionsExlporationsContainer: typeof SectionsExlporationsContainer;
   sectionsLineup: typeof SectionsLineup;
@@ -342,6 +386,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    layoutPageLayout: makeNodeComponent("layoutPageLayout"),
     sectionsHero: makeNodeComponent("sectionsHero"),
     sectionsExlporationsContainer: makeNodeComponent(
       "sectionsExlporationsContainer"
